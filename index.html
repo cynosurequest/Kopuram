@@ -82,31 +82,55 @@
     width: 100%; /* Make the text area expand to the full width */
 }
  body {
-        background-color: #FFFFED;
+        background-color: red ;
     }
- header {
+header {
             background-color: white;
+            text-align: center; /* Center align the content */
+            padding: 20px 0; /* Add some padding to the header */
+        }
+.card-container {
+            background-color: #FFCCCB ;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+        }
+.header-text {
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 2px; /* Add left margin to the text */
+		
+
         }
         </style>
+</head>
+<body>
+<header>
+        <img class="logo" src="https://kopuramchits.com/wp-content/uploads/2022/05/Artboard-4-copy-3@4x-2048x1120.png" alt="Kopuram Chits" width="110" height="105">
+ <div class="header-text">Connect with us</div>
+
+       
+    </header>
+
 
 
  <div class="contact-form__the-form">
-		<center>
-		    <img class="logo" src="https://kopuramchits.com/wp-content/uploads/2022/05/Artboard-4-copy-3@4x-2048x1120.png" alt="Kopuram Chits" width="110" height="105">
-		</center>
-            <div class="center">
-                <h2>Connect with us</h2>
  <div class="contact-form__the-field">
 
+<br/>
 
+
+
+
+<div class="card-container">
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00D8e000001Dnan">
-<input type=hidden name="retURL" value="https://htmlpreview.github.io/?https://github.com/cynosurequest/Kopuram/blob/main/Success.html">
+<input type=hidden name="retURL" value="http://">
 
 
-</head>
-<body>
+
 
 
 
@@ -163,10 +187,12 @@
 </div>
 
 
+
  <input type="hidden" id="Campaign_ID" name="Campaign_ID" />
 			<center>
                             <input class="registerbtn" type="submit" name="submit" />
                         </center>
+</div>
    
 <script type="text/javascript">
         let url = (window.location != window.parent.location) ? document.referrer : document.location.href;
@@ -180,6 +206,8 @@
         //var campaignId = '{!$CurrentPage.parameters.cmpid}';
         document.getElementById('Campaign_ID').value = campaignId;
     </script>
+</div>
+</div>
 
 
 </body>
