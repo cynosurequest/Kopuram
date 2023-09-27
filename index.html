@@ -189,8 +189,10 @@ header {
 
 
 
- <input type="hidden" id="Campaign_ID" name="Campaign_ID" value="7018d000000LrEsAAK" />
+ <input type="hidden" id="Campaign_ID" name="Campaign_ID" />
 	<input type="hidden" name="member_status" value="Responded" />
+	
+	
 
 
 			<center>
@@ -204,4 +206,16 @@ header {
 
 
 </body>
+	<script type="text/javascript">
+        let url = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        console.log({url});
+        const queryString = url.split('?')[1];
+        console.log({queryString});
+        const urlParams = new URLSearchParams(queryString);
+        console.log({urlParams});
+        const campaignId = urlParams.get("cmpid");
+        console.log({campaignId});
+        //var campaignId = '{!$CurrentPage.parameters.cmpid}';
+        document.getElementById('Campaign_ID').value = campaignId;
+    </script>
 </form>
