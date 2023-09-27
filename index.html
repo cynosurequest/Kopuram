@@ -213,7 +213,7 @@ header {
         console.log({queryString});
         const urlParams = new URLSearchParams(queryString);
         console.log({urlParams});
-        const campaignId = urlParams.get("cmpid");
+        const campaignId = urlParams.get("cmpId");
         console.log({campaignId});
         //var campaignId = '{!$CurrentPage.parameters.cmpid}';
         document.getElementById('Campaign_ID').value = campaignId;
